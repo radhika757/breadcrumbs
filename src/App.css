@@ -1,42 +1,63 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+.app {
+  padding: 0 20px;
+  font-family: sans-serif;
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: absolute;
+  top: 0%;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px;
+  padding: 20px 0;
+}
+
+.product-card {
+  border: 1px solid #ddd;
+  padding: 10px;
   text-align: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.product-card a {
+  text-decoration: none;
+  color: #333;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.product-card img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  max-height: 200px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.breadcrumbs {
+  margin-bottom: 20px;
+  font-size: 16px;
+  text-transform: capitalize;
 }
 
-.card {
-  padding: 2em;
+.breadcrumbs a {
+  text-decoration: none;
+  color: #333;
 }
 
-.read-the-docs {
-  color: #888;
+.breadcrumbs span {
+  color: #999;
+}
+
+.view-all {
+  text-align: center;
+  margin: 15px 0;
+  background-color: #ddd;
+  padding: 5px 5px;
+}
+
+.view-all a {
+  color: #333;
+  font-weight: 500;
 }
